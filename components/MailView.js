@@ -25,14 +25,13 @@ export default class MailView extends Component {
     
         const { navigation } = this.props;
         const html = navigation.getParam('html','null');
-        console.log(html)
         return (
             <View style={{flex:1}}>
                 <WebView
                     useWebKit={true}
                     originWhitelist={['*']}
                     source={{html: html}}
-                    injectedJavaScript={INJECTED_JAVASCRIPT}
+                    //injectedJavaScript={INJECTED_JAVASCRIPT}
                 >
                 </WebView>
             </View>

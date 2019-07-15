@@ -49,17 +49,17 @@ class TabView extends Component {
   keyExtractor = (item, index) => index.toString()
 
   renderMailRow = ({ item }) => (
-    <ListItem avatar 
+    <ListItem avatar style={{flex: 1}}
     onPress={() => {
       this.props.navigation.navigate('MailView', {
         html: item.html
       });}}>
       <Left>
-        <UserAvatar size="50" name={item.from_address.toUpperCase()} color="#8DA1B9" />
+        <UserAvatar size='50' style={{flex: 1}} name={item.from_address.toUpperCase()} color="#8DA1B9" />
       </Left>
       <Body>
-        <Text>{item.subject.slice(0, 15)}</Text>
-        <Text note>{item.text.replace(/\ +/g, "").replace(/[\r\n]/g, "").slice(0, 25)}</Text>
+        <Text>{item.subject.slice(0, 20)}</Text>
+        <Text note style={{fontSize: 15}}>{item.text.replace(/\ +/g, "").replace(/[\r\n]/g, "").slice(0, 25)}</Text>
       </Body>
       <Right>
         <Text note>{item.to_address}</Text>

@@ -110,7 +110,7 @@ export default class UserTab extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 100,
+        flex: 1,
         marginTop: 25,
     },
     buttonStyle: {

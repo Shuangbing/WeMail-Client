@@ -4,7 +4,6 @@ import AddressTab from './AddressTab';
 import MailTab from './MailTab';
 import UserTab from './UserTab';
 import http from '../http';
-import Spinner from 'react-native-loading-spinner-overlay';
 import { YellowBox, ActivityIndicator, View } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import GLOBAL from '../global';
